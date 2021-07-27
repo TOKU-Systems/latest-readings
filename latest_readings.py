@@ -16,4 +16,3 @@ query_results = cur.fetchall()
 print(query_results)
 cur.close()
 conn.close()
-
