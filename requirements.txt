@@ -4,5 +4,6 @@ lazy-object-proxy==1.6.0
 mccabe==0.6.1
 psycopg2-binary==2.9.1
 pylint==2.9.5
+tabulate==0.8.9
 toml==0.10.2
 wrapt==1.12.1
