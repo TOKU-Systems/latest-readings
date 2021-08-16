@@ -13,3 +13,9 @@
     ```sh
     pip install -r requirements.txt
     ```
+
+## Run the latest_readings.py file
+
+```sh
+python latest_readings.py
+```
