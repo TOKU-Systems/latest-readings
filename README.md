@@ -16,7 +16,9 @@
     pip install -r requirements.txt
     ```
 
-## Run the latest_readings.py file
+## Run the example
+
+*To run this example, use the following on the command line*
 
 ```sh
 python latest_readings.py
