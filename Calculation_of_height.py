@@ -6,11 +6,9 @@ import datetime
 def round_sig(x, sig=5):
     return round(x, sig-int(floor(log10(abs(x))))-1)
 
-def height_calculation(pres,acceleration_due_to_gravity,specific_gravity):
-    height = pres/(acceleration_due_to_gravity * specific_gravity)
+def height_calculation(pressure, acceleration_due_to_gravity, specific_gravity):
+    height = pressure/(acceleration_due_to_gravity * specific_gravity)
     return height
-
-
 
 try:
     conn = psycopg2.connect(host="apidemo.tokusystems.com",port="5432",dbname="tsdb",user="data_viewer",password="tokuapidemosystems")
@@ -38,7 +36,7 @@ try:
         
             height = 0.0
             if isinstance(value,float)and value!= 0.0 : 
-                height = height_calculation(value,g,Specific_gravity)    
+                height = height_calculation(value, g, Specific_gravity)    
                 newRow.append(round_sig(height,5)) 
             elif isinstance(value,datetime.datetime):
                 newRow.append( value.strftime('%c'))
@@ -49,7 +47,7 @@ try:
         FormattedResults.append(newRow)
 
     print(tabulate(FormattedResults,headers=["Hard point","Asset name", "Signal name","Last Time","Last Height"]))
-    
+       
 finally:    
     cur.close()
     conn.close()
