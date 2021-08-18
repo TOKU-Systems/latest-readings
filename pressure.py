@@ -4,6 +4,7 @@ from tabulate import tabulate
 import datetime
 
 
+
 def round_sig(x, sig=5):
     return round(x, sig-int(floor(log10(abs(x))))-1)
 
@@ -20,23 +21,23 @@ try:
         WHERE x.signal_id = s.id
         ORDER BY x.t DESC
         LIMIT 1
-    ) sd ON true
-''')
+    ) sd ON true 
+    where s.name='Pressure' ''')
     query_results = cur.fetchall()
-    Formatted_results = []
+    FormattedResults = []
     for row in query_results:
-        Formatted_row = []
+        newRow = []
         for value in row:
             if isinstance(value,float)and value!= 0.0 :
-                Formatted_row.append(round_sig(value,5))  
+                newRow.append(round_sig(value,5))  
             elif isinstance(value,datetime.datetime):
-                Formatted_row.append( value.strftime('%c'))
+                newRow.append( value.strftime('%c'))
 
             else:
-                Formatted_row.append(value)
-            Formatted_results.append(Formatted_row)
+                newRow.append(value)
+            FormattedResults.append(newRow)
 
-    print(tabulate(Formatted_results,headers=["Hard point","Asset name", "Signal name","Last Time","Last reading"]))
+    print(tabulate(FormattedResults,headers=["Hard point","Asset name", "Signal name","Last Time","Last reading"]))
 finally:    
     cur.close()
     conn.close()

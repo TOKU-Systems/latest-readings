@@ -8,6 +8,8 @@
     python -m venv .venv
     ```
 
+    *Use python3 instead on Mac and Linux*
+
 1. Use pip to install requirements.
 
     ```sh
@@ -19,3 +21,5 @@
 ```sh
 python latest_readings.py
 ```
+
+*Use python3 instead on Mac and Linux*
