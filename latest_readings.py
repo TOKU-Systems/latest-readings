@@ -2,6 +2,7 @@ import psycopg2
 from math import log10, floor
 from tabulate import tabulate
 import datetime
+# import pandas as pd
 
 
 def round_sig(x, sig=5):
@@ -23,20 +24,20 @@ try:
     ) sd ON true
 ''')
     query_results = cur.fetchall()
-    Formatted_results = []
+    formatted_results = []
     for row in query_results:
-        Formatted_row = []
+        formatted_row = []
         for value in row:
             if isinstance(value,float)and value!= 0.0 :
-                Formatted_row.append(round_sig(value,5))  
+             formatted_row.append(round_sig(value,5))  
             elif isinstance(value,datetime.datetime):
-                Formatted_row.append( value.strftime('%c'))
-
+                formatted_row.append( value.strftime('%c'))
             else:
-                Formatted_row.append(value)
-            Formatted_results.append(Formatted_row)
+                formatted_row.append(value)
+        formatted_results.append(formatted_row)
 
-    print(tabulate(Formatted_results,headers=["Hard point","Asset name", "Signal name","Last Time","Last reading"]))
+    print(tabulate(formatted_results,headers=["Asset name","Hardpoint", "Signal name","Last Time","Last reading"]))
+
 finally:    
     cur.close()
     conn.close()
