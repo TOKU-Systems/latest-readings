@@ -37,6 +37,7 @@ Also we consider Density of the liquid which is the product of mass and volume,
 </p>
 where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due to gravity and h = height of the fluid 
 
+
 <p align="center">
   <img width="460" height="300" src="https://o.quizlet.com/MaIx7LqHSAVPoFcPNH28ng.png">
   
