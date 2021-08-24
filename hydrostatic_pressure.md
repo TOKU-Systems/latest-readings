@@ -1,4 +1,5 @@
- # Hydrostatic Pressure
+
+# Hydrostatic Pressure
 
 As the name itself suggests, hydrostatic pressure is the pressure exerted by a fluid (at rest) at equillibrium due to force of gravity.
 <p align="center">
@@ -33,7 +34,7 @@ Also we consider Density of the liquid which is the product of mass and volume,
 *upon combining the above  equations, we get*
 
 <p align="center">
- P = r * g * h
+  <span style="color:red">P = r * g * h</span>
 </p>
 where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due to gravity and h = height of the fluid 
 
