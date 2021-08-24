@@ -1,4 +1,4 @@
-# What is Hydrostatic Pressure?
+ # Hydrostatic Pressure
 
 As the name itself suggests, hydrostatic pressure is the pressure exerted by a fluid (at rest) at equillibrium due to force of gravity.
 <p align="center">
