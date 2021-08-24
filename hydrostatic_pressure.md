@@ -47,7 +47,7 @@ where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due
  * If we know the specific gravity of the fluid and the pressure exerted by the liquid we can calculate the maximum height of the fluid 
  that can be allowed.
 
- * We can avoid the occurence of any hazardous effects in the surroundings or to the equipemnt itself.
+ * We can avoid the occurence of any hazardous effects in the surroundings or to the equipment itself.
 
  The height can be calculated as 
  
