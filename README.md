@@ -1,7 +1,7 @@
 # Get latest readings
 
 ## Pre-requisites  
- 
+
 python3
 
 ## Setup
