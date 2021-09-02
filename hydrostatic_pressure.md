@@ -49,9 +49,20 @@ where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due
 
  * We can avoid the occurence of any hazardous effects in the surroundings or to the equipment itself.
 
- The height can be calculated as 
- 
+ The height can be calculated as
+
  <p align="center">
  h = P / (r * g)
  </p>
+
+## Specifications sheet
+
+* At Toku systems, highest grade equipments are employed which can withstand harsh temperatures and weather conditions.
+
+* To access the complete list of the specifications please visit
+
+
+
+
+
   
