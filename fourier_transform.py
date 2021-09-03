@@ -26,8 +26,6 @@ sp1 = np.fft.fft(df_new['Amplitude'])
 freq1 = np.fft.fftfreq(df_new['Last time'].shape[-1])
 fourier_signal=pd.DataFrame(dict(frequency = freq1, spectrum = sp1)).reset_index()
 print(fourier_signal)
-
-
 plt.plot(freq1, sp1.real, freq1, sp1.imag)
 plt.title('fourier signal')
 plt.xlabel('w')

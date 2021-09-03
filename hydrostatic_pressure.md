@@ -3,7 +3,7 @@
 
 As the name itself suggests, hydrostatic pressure is the pressure exerted by a fluid (at rest) at equillibrium due to force of gravity.
 <p align="center">
-  <img width="460" height="300" src="https://lh3.googleusercontent.com/proxy/6YhTmDtPzMmQ-j-iDrqL1vOuUPTujMaEB-hNV_pY0Zncm-ZEj4nbgZXURRlpx04S3339eVLRLZ3fS-4xbucWVrcous5AZxzPMp5o32dZE1AM7aN1RvZDOa3Or5OQfKc">
+  <img width="460" height="300" src="https://media.sciencephoto.com/c0/41/57/64/c0415764-800px-wm.jpg">
 
 ## Properties of Hydrostatic Pressure
 
@@ -38,9 +38,9 @@ Also we consider Density of the liquid which is the product of mass and volume,
 </p>
 where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due to gravity and h = height of the fluid 
 
-
 <p align="center">
   <img width="460" height="300" src="https://o.quizlet.com/MaIx7LqHSAVPoFcPNH28ng.png">
+</p>
   
 ### Why calculate the height of the fluid?
   

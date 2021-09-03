@@ -31,7 +31,7 @@ try:
             if isinstance(value,float)and value!= 0.0 :
              formatted_row.append(round_sig(value,5))  
             elif isinstance(value,datetime.datetime):
-                formatted_row.append( value.strftime('%c'))
+                formatted_row.append( value.strftime('%X'))
             else:
                 formatted_row.append(value)
         formatted_results.append(formatted_row)
